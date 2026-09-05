@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07151d">
+  <meta name="description" content="خدمات النظافة والعزل ونقل الأثاث ومكافحة الحشرات — خدمة سريعة واحترافية تصل إليك.">
+  <title>شركة أركان | خدمات النظافة والعزل والنقل</title>
+  <!-- TikTok Pixel Code Start -->
+  <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject = t;
+      var ttq = w[t] = w[t] || [];
+      ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"];
+      ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))); }; };
+      for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+      ttq.instance = function (t) {
+        for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+        return e;
+      };
+      ttq.load = function (e, n) {
+        var r = "https://analytics.tiktok.com/i18n/pixel/events.js", o = n && n.partner;
+        ttq._i = ttq._i || {};
+        ttq._i[e] = [];
+        ttq._i[e]._u = r;
+        ttq._t = ttq._t || {};
+        ttq._t[e] = +new Date;
+        ttq._o = ttq._o || {};
+        ttq._o[e] = n || {};
+        n = document.createElement("script");
+        n.type = "text/javascript";
+        n.async = !0;
+        n.src = r + "?sdkid=" + e + "&lib=" + t;
+        e = document.getElementsByTagName("script")[0];
+        e.parentNode.insertBefore(n, e);
+      };
+      ttq.load("DAE0DMRC77UES974JMOG");
+      ttq.page();
+    }(window, document, "ttq");
+  </script>
+  <!-- TikTok Pixel Code End -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+    :root {
+      --ink: #07151d;
+      --ink-soft: #163440;
+      --paper: #f7fbf9;
+      --muted: #6e8589;
+      --mint: #65e0ba;
+      --mint-deep: #12ad82;
+      --yellow: #ffc857;
+      --coral: #ff806b;
+      --line: rgba(7, 21, 29, .1);
+      --shadow: 0 24px 70px rgba(4, 38, 44, .16);
+      --radius-xl: 34px;
+      --radius-lg: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 7% 14%, rgba(101, 224, 186, .18), transparent 23rem),
+        radial-gradient(circle at 93% 70%, rgba(255, 200, 87, .16), transparent 25rem),
+        #eff7f4;
+      font-family: "Cairo", "IBM Plex Sans Arabic", Tahoma, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .page-shell { width: min(1180px, calc(100% - 28px)); margin: 0 auto; }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(247, 251, 249, .88);
+      border-bottom: 1px solid rgba(7, 21, 29, .07);
+      backdrop-filter: blur(18px);
+    }
+    .nav {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: -.4px; }
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px 14px 14px 4px;
+      color: var(--ink);
+      background: var(--mint);
+      box-shadow: 7px 7px 0 rgba(7, 21, 29, .09);
+      transform: rotate(-4deg);
+      font-size: 21px;
+    }
+    .brand-text { line-height: 1.15; }
+    .brand-text small { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; font-weight: 600; letter-spacing: .2px; }
+    .nav-menu {
+      position: absolute;
+      top: 70px;
+      left: 14px;
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 3px;
+      width: min(280px, calc(100vw - 28px));
+      padding: 9px;
+      border: 1px solid rgba(7, 21, 29, .1);
+      border-radius: 19px;
+      color: var(--muted);
+      background: rgba(255,255,255,.97);
+      box-shadow: 0 19px 45px rgba(7,21,29,.17);
+      font-size: 13px;
+      font-weight: 700;
+      animation: menuIn .2s ease both;
+    }
+    .nav-menu.open { display: flex; }
+    .nav-menu a { transition: color .2s ease; }
+    .nav-menu a:not(.nav-cta) { padding: 10px 13px; border-radius: 11px; }
+    .nav-menu a:not(.nav-cta):hover { background: #eff8f4; }
+    .nav-menu a:hover { color: var(--mint-deep); }
+    .nav-cta { margin-top: 4px; padding: 10px 17px; border-radius: 99px; color: var(--ink); text-align: center; background: var(--yellow); box-shadow: 0 8px 18px rgba(255, 200, 87, .22); }
+    .menu-toggle { display: block; width: 42px; height: 42px; border: 0; border-radius: 13px; color: var(--ink); background: #e6f2ee; cursor: pointer; }
+    .menu-toggle span { display: block; width: 20px; height: 2px; margin: 4px auto; border-radius: 3px; background: currentColor; }
+    .menu-toggle:hover { background: var(--mint); }
+    @keyframes menuIn { from { opacity: 0; transform: translateY(-7px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(340px, .95fr);
+      align-items: center;
+      gap: clamp(35px, 6vw, 95px);
+      min-height: 590px;
+      padding: 72px 0 55px;
+    }
+    .hero-copy { position: relative; z-index: 1; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; color: var(--mint-deep); font-size: 13px; font-weight: 800; }
+    .eyebrow::before { content: ""; width: 30px; height: 2px; border-radius: 3px; background: var(--mint-deep); }
+    h1 { max-width: 660px; margin: 0; font-size: clamp(35px, 5.2vw, 65px); line-height: 1.16; letter-spacing: -2px; font-weight: 900; }
+    h1 strong { color: var(--mint-deep); }
+    .hero-lead { max-width: 530px; margin: 22px 0 27px; color: var(--muted); font-size: clamp(15px, 1.8vw, 18px); line-height: 2; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 49px;
+      padding: 11px 20px;
+      border: 0;
+      border-radius: 14px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-primary { color: var(--ink); background: var(--mint); box-shadow: 0 12px 24px rgba(18, 173, 130, .22); }
+    .btn-primary:hover { background: #7be8c6; box-shadow: 0 17px 28px rgba(18, 173, 130, .3); }
+    .btn-dark { color: #fff; background: var(--ink); box-shadow: 0 12px 24px rgba(7, 21, 29, .16); }
+    .btn-light { color: var(--ink); background: #fff; border: 1px solid var(--line); }
+    .mini-note { display: flex; align-items: center; gap: 9px; margin-top: 25px; color: var(--muted); font-size: 12px; font-weight: 600; }
+    .mini-note .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--mint-deep); box-shadow: 0 0 0 5px rgba(18, 173, 130, .13); }
+
+    /* Flyer card */
+    .flyer-wrap { position: relative; display: flex; justify-content: center; }
+    .flyer {
+      position: relative;
+      width: min(100%, 430px);
+      min-height: 455px;
+      overflow: hidden;
+      padding: 32px;
+      border-radius: var(--radius-xl);
+      color: #fff;
+      background: linear-gradient(145deg, #0c2833 0%, #07151d 68%);
+      box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+    .flyer::before, .flyer::after { content: ""; position: absolute; z-index: -1; border-radius: 50%; }
+    .flyer::before { width: 270px; height: 270px; top: -105px; left: -88px; background: var(--mint); opacity: .95; }
+    .flyer::after { width: 220px; height: 220px; right: -108px; bottom: -105px; border: 26px solid var(--yellow); opacity: .95; }
+    .flyer-top { display: flex; align-items: center; justify-content: space-between; color: rgba(255,255,255,.65); font-size: 11px; font-weight: 700; }
+    .flyer-stamp { padding: 6px 11px; color: var(--ink); border-radius: 99px; background: var(--yellow); }
+    .flyer-image { position: absolute; z-index: -1; top: 0; right: 0; left: 0; height: 248px; overflow: hidden; opacity: .94; }
+    .flyer-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,21,29,.08) 20%, rgba(7,21,29,.18) 47%, #07151d 100%); }
+    .flyer-image img { width: 100%; height: 100%; display: block; object-fit: cover; }
+    .flyer-content { position: relative; z-index: 1; padding: 190px 0 75px; }
+    .flyer-content .tiny { color: var(--mint); font-size: 12px; font-weight: 800; }
+    .flyer-content h2 { margin: 11px 0 14px; font-size: 39px; line-height: 1.25; letter-spacing: -1.5px; }
+    .flyer-content p { max-width: 265px; margin: 0; color: rgba(255,255,255,.72); font-size: 14px; }
+    .flyer-contact { position: absolute; right: 32px; bottom: 31px; left: 32px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 19px; border-top: 1px solid rgba(255,255,255,.16); }
+    .flyer-number { direction: ltr; color: var(--mint); font-size: 19px; font-weight: 800; letter-spacing: .4px; }
+    .flyer-phone { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: var(--ink); background: #fff; font-size: 20px; }
+    .spark { position: absolute; color: var(--yellow); font-size: 26px; animation: float 3s ease-in-out infinite; }
+    .spark.one { top: 31%; right: -24px; }
+    .spark.two { left: -23px; bottom: 17%; color: var(--mint); animation-delay: 1.1s; }
+    @keyframes float { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-9px) rotate(10deg); } }
+
+    /* Sections */
+    .section { padding: 70px 0; }
+    .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 28px; }
+    .section-kicker { margin: 0 0 7px; color: var(--mint-deep); font-size: 12px; font-weight: 900; letter-spacing: .5px; }
+    h2.section-title { margin: 0; font-size: clamp(27px, 4vw, 39px); line-height: 1.3; letter-spacing: -1px; }
+    .section-heading > p { max-width: 360px; margin: 0; color: var(--muted); font-size: 13px; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+    .service-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 300px;
+      overflow: hidden;
+      padding: 0 22px 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: rgba(255,255,255,.78);
+      box-shadow: 0 10px 30px rgba(10, 60, 62, .04);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .service-card:hover { transform: translateY(-7px); box-shadow: 0 20px 40px rgba(10, 60, 62, .12); }
+    .service-image {
+      width: calc(100% + 44px);
+      height: 142px;
+      margin: 0 -22px 19px;
+      overflow: hidden;
+      background: #d8f4e9;
+    }
+    .service-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: saturate(.88);
+      transition: transform .4s ease, filter .4s ease;
+    }
+    .service-card:hover .service-image img { transform: scale(1.07); filter: saturate(1.08); }
+    .service-icon { display: grid; place-items: center; width: 52px; height: 52px; margin-bottom: 20px; border-radius: 17px; color: var(--ink); font-size: 24px; background: #d8f4e9; }
+    .service-card:nth-child(2) .service-icon { background: #fff0c8; }
+    .service-card:nth-child(3) .service-icon { background: #dcebf5; }
+    .service-card:nth-child(4) .service-icon { background: #ffe0da; }
+    .service-card h3 { margin: 0 0 7px; font-size: 18px; }
+    .service-card p { flex: 1; margin: 0 0 19px; color: var(--muted); font-size: 12px; line-height: 1.9; }
+    .card-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .card-actions .btn { min-height: 43px; padding: 8px 7px; border-radius: 11px; font-size: 11px; }
+    .btn-whatsapp { color: #fff; background: #18b984; }
+
+    /* Moving service strip */
+    .service-marquee {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 12px 0;
+      color: #fff;
+      background: var(--ink);
+      border-top: 1px solid rgba(101,224,186,.22);
+      border-bottom: 1px solid rgba(101,224,186,.22);
+      box-shadow: 0 13px 30px rgba(7,21,29,.11);
+    }
+    .service-marquee::before,
+    .service-marquee::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      width: 92px;
+      pointer-events: none;
+    }
+    .service-marquee::before { left: 0; background: linear-gradient(90deg, var(--ink), transparent); }
+    .service-marquee::after { right: 0; background: linear-gradient(270deg, var(--ink), transparent); }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 24s linear infinite;
+    }
+    .marquee-group { display: flex; align-items: center; flex-shrink: 0; }
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 29px;
+      color: rgba(255,255,255,.86);
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .marquee-item b { color: var(--mint); font-size: 18px; line-height: 1; }
+    @keyframes marquee { to { transform: translateX(50%); } }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px;
+      padding: 31px;
+      border-radius: var(--radius-xl);
+      color: #fff;
+      background: var(--ink);
+      overflow: hidden;
+      position: relative;
+    }
+    .features::before { content: ""; position: absolute; width: 260px; height: 260px; top: -140px; left: 45%; border: 2px solid rgba(101,224,186,.22); border-radius: 50%; box-shadow: 0 0 0 26px rgba(101,224,186,.05), 0 0 0 52px rgba(101,224,186,.04); }
+    .features-copy, .feature-list { position: relative; z-index: 1; }
+    .features-copy h2 { max-width: 410px; margin: 0 0 13px; font-size: clamp(26px, 4vw, 37px); line-height: 1.35; }
+    .features-copy p { max-width: 390px; margin: 0; color: rgba(255,255,255,.62); font-size: 13px; }
+    .feature-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-content: center; }
+    .feature { display: flex; align-items: flex-start; gap: 11px; padding: 15px 13px; border: 1px solid rgba(255,255,255,.1); border-radius: 15px; background: rgba(255,255,255,.045); }
+    .feature-icon { flex: 0 0 auto; display: grid; place-items: center; width: 29px; height: 29px; border-radius: 9px; color: var(--ink); background: var(--mint); font-size: 15px; font-weight: 900; }
+    .feature strong { display: block; margin-bottom: 2px; font-size: 12px; }
+    .feature span { display: block; color: rgba(255,255,255,.55); font-size: 10px; line-height: 1.6; }
+
+    .location-bar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 18px; padding: 17px 21px; border-radius: 18px; background: #fff; box-shadow: 0 9px 25px rgba(10, 60, 62, .05); }
+    .location-label { display: flex; align-items: center; gap: 11px; font-size: 13px; font-weight: 800; }
+    .location-pin { display: grid; place-items: center; width: 37px; height: 37px; border-radius: 11px; color: var(--ink); background: #fff0c8; }
+    .location-bar small { color: var(--muted); font-size: 11px; }
+
+    .testimonial { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 16px; padding: 24px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: rgba(255,255,255,.72); }
+    .quote-mark { display: grid; place-items: center; width: 49px; height: 49px; border-radius: 15px; color: var(--ink); background: var(--yellow); font-size: 24px; font-weight: 900; }
+    .testimonial p { margin: 0; font-size: 14px; font-weight: 700; }
+    .testimonial small { display: block; margin-top: 5px; color: var(--muted); font-size: 11px; }
+    .stars { color: #f3b31e; letter-spacing: 2px; font-size: 16px; white-space: nowrap; }
+
+    /* Footer */
+    footer { margin-top: 14px; padding: 28px 0 35px; border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; color: var(--muted); font-size: 11px; }
+    .designer { color: var(--ink); font-weight: 800; }
+    .designer a { color: var(--mint-deep); text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Floating action buttons */
+    .floating-actions { position: fixed; z-index: 30; left: 17px; bottom: 22px; display: flex; flex-direction: column; gap: 11px; }
+    .float-btn { position: relative; display: grid; place-items: center; width: 58px; height: 58px; border: 3px solid rgba(255,255,255,.86); border-radius: 50%; color: #fff; font-size: 23px; box-shadow: 0 12px 25px rgba(7, 21, 29, .2); animation: pulse 2.1s infinite; }
+    .float-btn span { position: absolute; right: calc(100% + 10px); padding: 6px 10px; border-radius: 7px; color: var(--ink); background: #fff; box-shadow: 0 6px 18px rgba(7,21,29,.12); font-family: inherit; font-size: 10px; font-weight: 800; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .2s ease; }
+    .float-btn:hover span { opacity: 1; }
+    .float-call { background: var(--ink); }
+    .float-wa { background: #13b77f; animation-delay: .25s; }
+    @keyframes pulse { 0%, 100% { box-shadow: 0 12px 25px rgba(7,21,29,.2), 0 0 0 0 rgba(18,173,130,.35); } 50% { box-shadow: 0 13px 30px rgba(7,21,29,.25), 0 0 0 11px rgba(18,173,130,0); } }
+    .float-btn::after {
+      content: "";
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.62);
+      animation: shine 2.1s ease-in-out infinite;
+    }
+    .float-wa::after { animation-delay: .25s; }
+    @keyframes shine { 0%, 100% { opacity: .25; transform: scale(.96); } 45% { opacity: 1; transform: scale(1.05); } 70% { opacity: .25; transform: scale(1); } }
+
+    /* Centered visual layout */
+    main { text-align: center; }
+    .hero-copy { text-align: center; }
+    .hero-lead { margin-right: auto; margin-left: auto; }
+    .hero-actions, .mini-note { justify-content: center; }
+    .section-heading { justify-content: center; text-align: center; }
+    .section-heading > p { margin-right: auto; margin-left: auto; }
+    .services-grid { text-align: center; }
+    .service-card { align-items: center; }
+    .service-card p { max-width: 245px; }
+    .card-actions { width: 100%; }
+    .features-copy { text-align: center; }
+    .features-copy p { margin-right: auto; margin-left: auto; }
+    .feature-list { text-align: right; }
+    .location-bar { justify-content: center; text-align: center; }
+    .testimonial { text-align: center; }
+    .testimonial small { text-align: center; }
+    footer { text-align: center; }
+    .footer-inner { justify-content: center; }
+    .floating-actions {
+      right: 18px;
+      left: auto;
+      align-items: center;
+    }
+    .float-btn {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+    }
+    .float-btn svg {
+      width: 27px;
+      height: 27px;
+      fill: currentColor;
+    }
+    .float-btn span {
+      right: calc(100% + 12px);
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; padding-top: 54px; }
+      .hero-copy { text-align: center; }
+      .hero-lead { margin-right: auto; margin-left: auto; }
+      .hero-actions, .mini-note { justify-content: center; }
+      .flyer-wrap { margin-top: 5px; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .features { grid-template-columns: 1fr; }
+      .features-copy p { max-width: 530px; }
+    }
+    @media (max-width: 650px) {
+      .page-shell { width: min(100% - 22px, 520px); }
+      .site-header .page-shell { width: calc(100% - 24px); }
+      .nav { min-height: 60px; }
+      .nav-menu { top: 64px; left: 11px; width: calc(100vw - 22px); }
+      .hero { min-height: 0; padding: 48px 0 35px; }
+      h1 { font-size: 38px; letter-spacing: -1.5px; }
+      .flyer { min-height: 400px; padding: 25px; border-radius: 27px; }
+      .flyer-image { height: 220px; }
+      .flyer-content { padding-top: 166px; padding-bottom: 66px; }
+      .flyer-content h2 { font-size: 34px; }
+      .flyer-contact { right: 25px; bottom: 25px; left: 25px; }
+      .section { padding: 48px 0; }
+      .section-heading { display: block; }
+      .section-heading > p { margin-top: 12px; }
+      .services-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .service-card { min-height: 294px; padding: 0 16px 16px; border-radius: 18px; }
+      .service-image { width: calc(100% + 32px); height: 110px; margin-right: -16px; margin-left: -16px; margin-bottom: 14px; }
+      .service-icon { width: 45px; height: 45px; margin-bottom: 14px; border-radius: 14px; font-size: 21px; }
+      .service-card h3 { font-size: 15px; }
+      .service-card p { font-size: 11px; }
+      .card-actions { grid-template-columns: 1fr; gap: 6px; }
+      .card-actions .btn { min-height: 40px; }
+      .features { padding: 24px 18px; border-radius: 25px; }
+      .feature-list { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .feature { padding: 11px 8px; gap: 7px; }
+      .feature strong { font-size: 10px; }
+      .feature span { font-size: 9px; }
+      .feature-icon { width: 24px; height: 24px; font-size: 12px; }
+      .location-bar { align-items: flex-start; flex-direction: column; }
+      .testimonial { grid-template-columns: auto 1fr; }
+      .stars { grid-column: 1 / -1; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+      .floating-actions { right: 12px; left: auto; bottom: 14px; gap: 8px; }
+      .float-btn { width: 54px; height: 54px; }
+      .float-btn svg { width: 23px; height: 23px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-shell">
+      <nav class="nav" aria-label="القائمة الرئيسية">
+        <a class="brand" href="#home" aria-label="شركة أركان - الصفحة الرئيسية">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">شركة أركان <small>خدمة تستحق الثقة</small></span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+          <a href="#home">الرئيسية</a>
+          <a href="#about">من نحن</a>
+          <a href="#services">خدماتنا</a>
+          <a href="#reviews">تقييمات العملاء</a>
+          <a class="nav-cta" href="tel:0575651053">اتصل الآن</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="page-shell hero">
+      <div class="hero-copy">
+        <div class="eyebrow">حلول منزلية متكاملة</div>
+        <h1>بيتك يستاهل <strong>نظافة</strong> تليق به.</h1>
+        <p class="hero-lead">نقدم لك خدمات النظافة والعزل ونقل الأثاث ومكافحة الحشرات باهتمام حقيقي، وفريق جاهز يوصل لباب بيتك.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:0575651053">☎ اتصل واحجز الآن</a>
+          <a class="btn btn-dark" href="https://wa.me/201057651053?text=مرحباً، أريد الاستفسار عن خدماتكم" target="_blank" rel="noopener">◉ واتساب</a>
+        </div>
+        <div class="mini-note"><span class="dot"></span> مواعيد مرنة • سرعة في الاستجابة • أسعار مناسبة</div>
+      </div>
+
+      <div class="flyer-wrap" aria-label="بطاقة تعريف بالخدمة">
+        <span class="spark one">✦</span>
+        <span class="spark two">✦</span>
+        <div class="flyer">
+          <div class="flyer-top"><span>خدمة متنقلة</span><span class="flyer-stamp">متاح الآن</span></div>
+          <div class="flyer-image" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&amp;fit=crop&amp;w=1100&amp;q=84" alt="">
+          </div>
+          <div class="flyer-content">
+            <div class="tiny">YOUR HOME, OUR CARE</div>
+            <h2>نظافة.<br>أمان.<br><span style="color: var(--mint);">راحة.</span></h2>
+            <p>كل ما يحتاجه بيتك في مكان واحد، بجودة تلاحظها من أول زيارة.</p>
+          </div>
+          <div class="flyer-contact">
+            <div><div style="font-size:10px;color:rgba(255,255,255,.55);margin-bottom:3px;">للحجز والاستفسار</div><div class="flyer-number">0575651053</div></div>
+            <a class="flyer-phone" href="tel:0575651053" aria-label="اتصال مباشر">☎</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-marquee" aria-label="خدماتنا المتاحة">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item"><b>✦</b> تنظيف شامل للمنازل</span>
+          <span class="marquee-item"><b>✦</b> عزل وحماية من التسربات</span>
+          <span class="marquee-item"><b>✦</b> نقل أثاث بأمان</span>
+          <span class="marquee-item"><b>✦</b> مكافحة الحشرات</span>
+          <span class="marquee-item"><b>✦</b> خدمة سريعة تصل إليك</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span class="marquee-item"><b>✦</b> تنظيف شامل للمنازل</span>
+          <span class="marquee-item"><b>✦</b> عزل وحماية من التسربات</span>
+          <span class="marquee-item"><b>✦</b> نقل أثاث بأمان</span>
+          <span class="marquee-item"><b>✦</b> مكافحة الحشرات</span>
+          <span class="marquee-item"><b>✦</b> خدمة سريعة تصل إليك</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-shell section" id="services">
+      <div class="section-heading">
+        <div><p class="section-kicker">خدماتنا</p><h2 class="section-title">نرتب لك التفاصيل الكبيرة<br>بلمسة واحدة.</h2></div>
+        <p>اختر الخدمة المناسبة، واضغط على اتصال أو واتساب للحجز مباشرة. فريقنا جاهز لخدمتك.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="عاملة تنظف منزلاً بعناية" loading="lazy"></div>
+          <div class="service-icon">✧</div>
+          <h3>خدمات النظافة</h3>
+          <p>تنظيف شامل للمنازل والمجالس والمكاتب مع عناية بكل ركن وتفصيلة.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="tel:0575651053">☎ اتصال</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/201057651053?text=أرغب في حجز خدمة النظافة" target="_blank" rel="noopener">◉ واتساب</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-image"><img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="عامل يجهز أعمال العزل للمبنى" loading="lazy"></div>
+          <div class="service-icon">⌁</div>
+          <h3>العزل</h3>
+          <p>حلول عزل تساعد على حماية منزلك وتقليل التسربات والحرارة بكفاءة.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="tel:0575651053">☎ اتصال</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/201057651053?text=أرغب في حجز خدمة العزل" target="_blank" rel="noopener">◉ واتساب</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-image"><img src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="صناديق وأغراض جاهزة لنقل الأثاث" loading="lazy"></div>
+          <div class="service-icon">▣</div>
+          <h3>نقل الأثاث</h3>
+          <p>فك وتغليف ونقل وتركيب أثاثك بأمان واهتمام من المكان إلى المكان.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="tel:0575651053">☎ اتصال</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/201057651053?text=أرغب في حجز خدمة نقل الأثاث" target="_blank" rel="noopener">◉ واتساب</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-image"><img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="خدمة مكافحة الحشرات وحماية المنزل" loading="lazy"></div>
+          <div class="service-icon">◌</div>
+          <h3>مكافحة الحشرات</h3>
+          <p>مكافحة فعالة وآمنة للتخلص من الحشرات والحفاظ على راحة عائلتك.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="tel:0575651053">☎ اتصال</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/201057651053?text=أرغب في حجز خدمة مكافحة الحشرات" target="_blank" rel="noopener">◉ واتساب</a>
+          </div>
+        </article>
+      </div>
+      <div class="location-bar">
+        <div class="location-label"><span class="location-pin">⌖</span><span>المدينة والمناطق المجاورة</span></div>
+        <small>نصل إليك أينما كنت — تواصل معنا لتأكيد نطاق الخدمة</small>
+      </div>
+    </section>
+
+    <section class="page-shell section" id="about">
+      <div class="features">
+        <div class="features-copy">
+          <p class="section-kicker" style="color:var(--mint);">لماذا نحن؟</p>
+          <h2>شغل نظيف، تعامل راقٍ، ونتيجة تفرّق.</h2>
+          <p>نؤمن أن الخدمة الممتازة تبدأ من الالتزام بالمواعيد وتنتهي براحة حقيقية تشعر بها بعد انتهاء العمل.</p>
+        </div>
+        <div class="feature-list">
+          <div class="feature"><span class="feature-icon">✓</span><div><strong>فريق محترف</strong><span>خبرة واهتمام بالتفاصيل</span></div></div>
+          <div class="feature"><span class="feature-icon">◷</span><div><strong>استجابة سريعة</strong><span>ننسق الموعد بسهولة</span></div></div>
+          <div class="feature"><span class="feature-icon">♢</span><div><strong>أسعار مناسبة</strong><span>جودة تستحق ما تدفعه</span></div></div>
+          <div class="feature"><span class="feature-icon">♡</span><div><strong>راحة بالك</strong><span>خدمة باهتمام وأمان</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-shell section" id="reviews">
+      <div class="section-heading">
+        <div><p class="section-kicker">تقييمات العملاء</p><h2 class="section-title">كلام يفرحنا<br>ويطمّنك.</h2></div>
+      </div>
+      <div class="testimonial">
+        <div class="quote-mark">“</div>
+        <div><p>خدمة ممتازة وسريعة، والتعامل محترم جداً. النتيجة كانت أفضل مما توقعت.</p><small>عميل سعيد بالخدمة</small></div>
+        <div class="stars" aria-label="تقييم خمس نجوم">★★★★★</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="page-shell footer-inner">
+      <div>© <span id="year">2026</span> جميع الحقوق محفوظة لشركة أركان</div>
+      <div class="designer">تم التصميم بواسطة <a href="https://wa.me/201029095046?text=مرحباً م. نجوى، أريد الاستفسار عن التصميم" target="_blank" rel="noopener">م. نجوى إبراهيم</a></div>
+    </div>
+  </footer>
+
+  <div class="floating-actions" aria-label="وسائل التواصل السريعة">
+    <a class="float-btn float-call" href="tel:0575651053" aria-label="اتصال سريع">
+      <span>اتصال مباشر</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.7 3.5 9.2 3c.7-.1 1.3.3 1.5.9l1.1 2.8c.2.5.1 1-.3 1.4L10 9.6a13.2 13.2 0 0 0 4.4 4.4l1.5-1.5c.4-.4.9-.5 1.4-.3l2.8 1.1c.6.2 1 .8.9 1.5l-.5 2.5c-.1.7-.7 1.2-1.4 1.2C11.3 18.5 5.5 12.7 5.5 5c0-.7.5-1.3 1.2-1.5Z"/></svg>
+    </a>
+    <a class="float-btn float-wa" href="https://wa.me/201057651053?text=مرحباً، أريد الاستفسار عن خدماتكم" target="_blank" rel="noopener" aria-label="واتساب سريع">
+      <span>تحدث معنا على واتساب</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.7 8.7 0 0 0-7.5 13.1L3.3 20.8l4.7-1.2A8.8 8.8 0 1 0 12 3.2Zm0 15.8a7 7 0 0 1-3.6-1l-.3-.2-2.8.7.7-2.7-.2-.3A7 7 0 1 1 12 19Zm3.8-5.2c-.2-.1-1.2-.6-1.4-.6-.2-.1-.3-.1-.5.1l-.7.8c-.1.1-.2.1-.4 0a5.7 5.7 0 0 1-2.8-2.5c-.2-.3 0-.4.1-.5l.4-.5c.1-.1.1-.2.2-.4 0-.1 0-.3-.1-.4l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.2 1.6 2.5 3.9 3.4 1.9.7 2.3.6 2.7.6.4 0 1.2-.5 1.3-1 .2-.5.2-.9.1-1-.1-.1-.3-.2-.5-.3Z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      const year = document.getElementById('year');
+      year.textContent = new Date().getFullYear();
+      menuToggle.addEventListener('click', function () {
+        const isOpen = navMenu.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+      navMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          navMenu.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }());
+  </script>
+</body>
+</html>
